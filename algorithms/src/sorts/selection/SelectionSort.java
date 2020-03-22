@@ -1,8 +1,10 @@
 package sorts.selection;
 
+import sorts.Sort;
+
 // O(n^2)
-public class SelectionSort {
-  public static int[] perform(int[] array) {
+public class SelectionSort implements Sort {
+  public static void perform(int[] array) {
     for(int i = 0; i < array.length - 1; i++) {
       int minimum = i;
       for(int j = i+1; j < array.length; j++) {
@@ -15,7 +17,5 @@ public class SelectionSort {
       array[minimum] = array[i];
       array[i] = swap_temp;
     }
-
-    return array;
   }
 }
