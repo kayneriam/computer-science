@@ -2,7 +2,6 @@ package sorts.bubble;
 
 import sorts.Sort;
 
-// O(n^2)
 public class BubbleSort implements Sort {
   public static void perform(int[] array) {
     for(int i = 0; i < array.length - 1; i++) {
